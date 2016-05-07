@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="group14.tutoru.MainPage"
+    tools:showIn="@layout/app_bar_main_page"
+	android:background="#dbdada">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="@drawable/round_layout">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/text_margin" 
+			android:textStyle="bold"
+			android:textSize="32dp"
+			android:text="Featured Tutors"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="3dp"
+				android:background="@color/colorPrimary"/>
+			<ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:id="@+id/profilePic"
+                android:scaleType="centerCrop"
+				android:src="@android:drawable/ic_menu_gallery"/>
+			<RatingBar
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/ratingBar"
+				android:numStars="4"
+				android:isIndicator="true"/>
+			<TextView
+				android:id="@+id/tutorInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="15dp"
+				android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"/>
+			</LinearLayout>
+	</LinearLayout>
+	<Button
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/featured"
+	android:background="@null"/>
+
+</RelativeLayout>
